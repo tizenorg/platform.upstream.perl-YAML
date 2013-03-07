@@ -1,0 +1,33 @@
+---
+abstract: "YAML Ain't Markup Language (tm)"
+author:
+  - 'Ingy döt Net <ingy@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.59
+configure_requires:
+  ExtUtils::MakeMaker: 6.59
+distribution_type: module
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: YAML
+name: YAML
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+requires:
+  Filter::Util::Call: 0
+  perl: 5.8.1
+resources:
+  homepage: https://github.com/ingydotnet/yaml-pm/tree
+  license: http://dev.perl.org/licenses/
+  repository:
+    type: git
+    url: git://github.com/ingydotnet/yaml-pm.git
+    web: https://github.com/ingydotnet/yaml-pm/tree
+version: 0.84
