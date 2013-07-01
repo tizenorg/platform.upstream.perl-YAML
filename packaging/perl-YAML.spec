@@ -20,6 +20,7 @@ Summary:        YAML Ain't Markup Language (tm)
 Url:            http://search.cpan.org/dist/YAML/
 Group:          Development/Libraries/Perl
 Source:         %{cpan_name}-%{version}.tar.gz
+Source1001: 	perl-YAML.manifest
 BuildRequires:  perl
 BuildRequires:  perl-macros
 BuildArch:      noarch
@@ -36,6 +37,7 @@ For information on the YAML syntax, please refer to the YAML specification.
 
 %prep
 %setup -q -n %{cpan_name}-%{version}
+cp %{SOURCE1001} .
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
